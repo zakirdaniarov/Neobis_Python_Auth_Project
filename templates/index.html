@@ -6,10 +6,6 @@
 </head>
 <body>
 <h1>Login Success!</h1>
-<!--{% for i in object_list %}-->
-<!--<h2>{{i.username}}</h2>-->
-<!--<p>{{ i.email }}</p>-->
-<!--{% endfor %}-->
 <form method="post" action="{% url 'users:logout' %}">
   {% csrf_token %}
   <button type="submit">Logout</button>
